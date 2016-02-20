@@ -5,12 +5,12 @@ package practise;
  */
 public class powerDemo {
 
-    static int calcPower(long a, int b) {
+    static long calcPower(long a, int b) {
         if(b == 1)
             return a;
         else {
-            int c = a * a;
-            int answ = calcPower(c,b/2);
+            long c = a * a;
+            long answ = calcPower(c,b/2);
             if(b % 2 != 0)
                 return answ * a;
             return answ;
